@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🛒 AI Powered E-Commerce Store</h1>
+</header>
+
+<!-- Login / Register Buttons -->
+<div class="auth-buttons">
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showRegister()">Register</button>
+</div>
+
+<!-- Login Form -->
+<div id="login-form" class="auth-form">
+    <h3>Login</h3>
+    <form action="login.php" method="post">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div class="close-btn" onclick="closeLogin()">✖</div>
+</div>
+
+<!-- Register Form -->
+<div id="register-form" class="auth-form">
+    <h3>Register</h3>
+    <form action="register.php" method="post">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit">Register</button>
+    </form>
+    <div class="close-btn" onclick="closeRegister()">✖</div>
+</div>
+
+<!-- Product Container -->
+<div class="product-container" id="product-list"></div>
+
+<!-- AI Chatbot Button -->
+<div class="chatbot-btn" onclick="openChatbot()">🤖 Chat with AI</div>
+
+<!-- AI Chatbot Box -->
+<div id="chatbot-box" class="chatbot-box">
+    <h3>AI Assistant</h3>
+    <div id="chat-area"></div>
+    <input type="text" id="userInput" placeholder="Ask something..." onkeypress="sendMessage(event)">
+</div>
+
+<!-- JS Scripts -->
+<script src="script.js"></script>
+<script src="ai_chatbot.js"></script>
+<script src="ai_recommend.js"></script>
+
+<script>
+// Show/hide login/register forms
+function showLogin() {
+    document.getElementById('login-form').style.display = 'block';
+}
+function closeLogin() {
+    document.getElementById('login-form').style.display = 'none';
+}
+function showRegister() {
+    document.getElementById('register-form').style.display = 'block';
+}
+function closeRegister() {
+    document.getElementById('register-form').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
