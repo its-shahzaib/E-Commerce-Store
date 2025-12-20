@@ -2,16 +2,16 @@
 Final project for DBS course.
 
 # 👥Group Details  
-1. Name: Shahzaib Khan
+1. Name: Shahzaib Khan;
       Reg No: B24F0356CS037
-2. Name: Muhammad Aihab
+2. Name: Muhammad Aihab;
       Reg No: B24F1655CS130
 
 # 📊Project Title & Description
-## Project Title:
-E-Commerce Store
+# Project Title:
+## E-Commerce Store
 
-## Description:
+# Description:
 # 🛒 AI Powered E-Commerce Store
 
 An intelligent and user-friendly **E-Commerce Web Application** designed to enhance online shopping using **AI-based chatbot assistance**.
