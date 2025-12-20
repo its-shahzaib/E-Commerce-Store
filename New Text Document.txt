@@ -1,0 +1,2 @@
+http://localhost/phpmyadmin/    // database
+http://localhost/ecommerce/index.php    // website
